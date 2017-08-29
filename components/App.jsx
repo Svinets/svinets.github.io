@@ -8,10 +8,12 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <Link to="/"><button>Home</button></Link>
-          <Link to={{pathname: '/gallery'}}><button>Gallery</button></Link>
-          <Link to={{pathname: '/portfolio'}}><button>Portfolio</button></Link>
+        <div id="main">
+          <div id="nav">
+            <Link to="/"><button>Home</button></Link>
+            <Link to={{pathname: '/gallery'}}><button>Gallery</button></Link>
+            <Link to={{pathname: '/portfolio'}}><button>Portfolio</button></Link>
+          </div>
           <Switch>
             <Route exact path="/" component={Profile} />
             <Route exact path="/gallery" component={Gallery} />
