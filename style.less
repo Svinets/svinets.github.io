@@ -1,5 +1,45 @@
-@text-color: #2B9E53;
+@white: #ffffff;
 
-h1 {
-  color: @text-color;
+html {
+  @font: 'Questrial', serif;
+  font-family: @font;
+  button {
+    font-family: @font;
+  }
+}
+
+#nav {
+  display: block;
+  margin: 0 auto;
+  background-image: url('/assets/bridge.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 1000px;
+  button {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: inherit;
+    border: none;
+    font-size: 20px;
+    color: @white;
+  }
+}
+
+.body {
+  display: block;
+  margin: 0 auto;
+  background-color: #cccccc;
+  line-height: 20px;
+  width: 1000px;
+  #line {
+    background-color: #000000;
+    height: 2px;
+    border: none;
+  }
+}
+
+#main {
+  background-color: #cccccc;
+  padding: 0px;
 }

@@ -1,3 +1,39 @@
-h1 {
-  color: #2B9E53;
+html {
+  font-family: 'Questrial', serif;
+}
+html button {
+  font-family: 'Questrial', serif;
+}
+#nav {
+  display: block;
+  margin: 0 auto;
+  background-image: url('/assets/bridge.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 1000px;
+}
+#nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: inherit;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+.body {
+  display: block;
+  margin: 0 auto;
+  background-color: #cccccc;
+  line-height: 20px;
+  width: 1000px;
+}
+.body #line {
+  background-color: #000000;
+  height: 2px;
+  border: none;
+}
+#main {
+  background-color: #cccccc;
+  padding: 0px;
 }
