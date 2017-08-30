@@ -1,25 +1,36 @@
 @white: #ffffff;
 
-html {
+.centerBlock {
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #cccccc;
   @font: 'Questrial', serif;
   font-family: @font;
   button {
     font-family: @font;
+    outline: 0;
   }
 }
 
+#banner {
+  .centerBlock;
+  height: 300px;
+  width: 100%;
+}
+
 #nav {
-  display: block;
-  margin: 0 auto;
-  background-image: url('/assets/bridge.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  .centerBlock;
   height: 300px;
   width: 1000px;
+  background-size: contain;
   button {
     background-color: rgba(0, 0, 0, 0.5);
-    height: inherit;
+    height: 100%;
     border: none;
     font-size: 20px;
     color: @white;
@@ -27,16 +38,9 @@ html {
 }
 
 .body {
-  display: block;
-  margin: 0 auto;
-  background-color: #cccccc;
+  .centerBlock;
   line-height: 20px;
   width: 1000px;
-  #line {
-    background-color: #000000;
-    height: 2px;
-    border: none;
-  }
 }
 
 #main {
