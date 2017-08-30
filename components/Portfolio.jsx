@@ -1,11 +1,18 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import style from '../style.css';
 
-const Portfolio = (props) => (
-  <div>
-    <h1>
-      Portfolio!
-    </h1>
-  </div>
-);
+export default class Portfolio extends React.Component {
+  componentDidMount() {
+    document.getElementById('banner').style.backgroundImage = 'url("../assets/night.jpg")';
+    document.getElementById('nav').style.backgroundImage = '';
+  }
 
-export default Portfolio;
+  render() {
+    return (
+      <div className="body">
+        <h1>Portfolio!</h1>
+      </div>
+    );
+  }
+}
